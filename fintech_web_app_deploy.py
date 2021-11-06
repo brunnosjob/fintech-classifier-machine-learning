@@ -43,7 +43,7 @@ st.subheader('Simulação')
 st.header('Easy Bank')
 
 renda = st.number_input('Me informe sua renda.')
-idade = st.number_input('Agora, preciso saber da sua idade.', value_min=18)
+idade = st.number_input('Agora, preciso saber da sua idade.', 18)
 emprestimo = st.number_input('Qual o valor de empréstimo do seu interesse?')
 st.markdown('Sem juros')
 parcela = st.radio('Selecione a quantidade de parcela',(1, 2, 3, 4, 5, 6))
