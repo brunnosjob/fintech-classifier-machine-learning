@@ -18,16 +18,18 @@ import streamlit as st
 
 #Cabeçalho
 st.header('Machine Learning para serviços financeiros eletrônicos')
-st.subheader('Modelo de machine learning classificador para otimização da relação com clientes')
+st.subheader('Esta é uma simulação')
 st.subheader('')
 
 #Informe
-st.write('Esse modelo objetiva não apenas classificar se um cliente pagará ou não pagará um empréstimo solicitado, mas, também tem a capacidade de sugerir valores e dicas viáveis aos clientes.')
+st.write('Esse modelo objetiva auxiliar as fintechs acerca de empréstimos automáticos de crédito ao cliente via aplicativo.') 
+st.write('O papel dessa inteligência é aprovar ou negar a solicitação de empréstimo de um determinado cliente a partir de alguns dados pessoais.')
 
+usuario =  st.text_input('Me informe seu nome para termos uma interação melhor.')
 
 #Criando variáveis 
-st.write('Olá! É um prazer interagir com você nessa simulação. Espero que goste desse momento.')
-usuario =  st.text_input('Gostaria de saber seu nome.')
+st.subheader('Simulação')
+st.header('Easy Bank')
 
 renda = st.slider('Me informe sua renda.', 350, 10000, 0)
 idade = st.slider('Agora, preciso saber da sua idade.', 18, 150, 18)
@@ -72,7 +74,7 @@ st.write(' ')
 #Condição e apresentação
 if classificacao == 0:
      
-    if renda <= 330:
+    if renda >= 100 and rend <= 330:
         st.write('{}, pedimos desculpas! Infelizmente não podemos comprometer a sua renda. Zelamos por você.'.format(usuario))
         st.write('Obrigado pela preferência')
         
@@ -85,42 +87,13 @@ if classificacao == 0:
         st.write('Mas, atenção! Você está comprometendo mais de 30% de sua renda.')
         st.write('Esses 30% é o limite alerta para se contratar créditos.')
         
-    elif emprestimo == (renda * 0.3):
-        st.write('{}, seu crédito de R$ {} foi aprovado. Parabéns!'.format(usuario, emprestimo))
-        
     elif emprestimo <= (renda * 0.3):
-        for i in np.arange(emprestimo, (renda*0.3), 1):
-
-            #Criando dataframe para dados de cliente fictício
-            cliente_classificacao_sugestao = [[renda, idade, i]]
-            cliente_classificacao_sugestao_df = pd.DataFrame(cliente_classificacao_sugestao)
-            
-            #Transformação: StandardScaler - classificação
-            #Padronizando os dados
-            cliente_standard_sugestao = standard_classificacao.transform(cliente_classificacao_sugestao_df)
-            
-            #Estimando - classificando
-            reavaliacao = tree_tomek.predict(cliente_standard_sugestao)
-            
-            #Condicional de sugestão
-            if reavaliacao == 0:
-                lista_emprestimo.append(i)
-                
-                if len(lista_emprestimo) == limite:
-                    if emprestimo > lista_emprestimo[-1]: 
-                        st.write('{}, seu crédito de R$ {} foi aprovado. Parabéns!'.format(usuario, emprestimo))
-                        st.write(' ')
-                        st.write('Mas gostariamos de informar que você foi aprovado para um crédito de R$ {}.'.format(lista_emprestimo[-1]))
-                        st.write('Que tal?')
-                    
-            elif reavaliacao == 1:
-                if len(lista_emprestimo) == limite:
-                    st.write('{}, seu crédito de R$ {} foi aprovado. Parabéns!'.format(usuario, emprestimo))
+        st.write('{}, seu crédito de R$ {} foi aprovado. Parabéns!'.format(usuario, emprestimo))
                     
     
 if classificacao == 1:
     
-    if renda <= 330:
+    if renda >= 100 and rend <= 330::
         st.write('{}, pedimos esculpas! Infelizmente não podemos comprometer sua renda. Zelamos por você.'.format(usuario))
         st.write('Obrigado pela preferência')
     
@@ -130,70 +103,10 @@ if classificacao == 1:
         st.write('Obrigado pela preferência!')
     
     elif emprestimo <= (renda * 0.3):
-        for i in np.arange(100, (renda*0.3), 1):
-
-            #Criando dataframe para dados de cliente fictício
-            cliente_classificacao_sugestao = [[renda, idade, i]]
-            cliente_classificacao_sugestao_df = pd.DataFrame(cliente_classificacao_sugestao)
-            
-            #Transformação: StandardScaler - classificação
-            #Padronizando os dados
-            cliente_standard_sugestao = standard_classificacao.transform(cliente_classificacao_sugestao_df)
-            
-            #Estimando - classificando
-            reavaliacao = tree_tomek.predict(cliente_standard_sugestao)
-            
-            #Condicional de sugestão
-            if reavaliacao == 0:
-                lista_emprestimo.append(i)
-                    
-                    
-                if len(lista_emprestimo) == limite:
-                    if emprestimo > lista_emprestimo[-1]: 
-                        st.write('{}, seu crédito de R$ {} não foi aprovado.'.format(usuario, emprestimo))
-                        st.write(' ')
-                        st.write('Mas gostariamos de informar que você foi aprovado para um crédito de R$ {}.'.format(lista_emprestimo[-1]))
-                        st.write('Que tal?')
-                    
-            elif reavaliacao == 1:
-                if len(lista_emprestimo) == limite:
-                    st.write('{}, seu crédito de R$ {} não foi aprovado.'.format(usuario, emprestimo))
-                    st.write('Obrigado pela preferência!')
-        
-        
+       st.write('{}, lamentamos! Seu crédito de R$ {} não foi aprovado.'.format(usuario, emprestimo))
+       st.write('Tente um valor menor.')             
+                         
     elif emprestimo >= (renda * 0.3):
-        for i in np.arange(100, (renda*0.3), 1):
-
-            #Criando dataframe para dados de cliente fictício
-            cliente_classificacao_sugestao = [[renda, idade, i]]
-            cliente_classificacao_sugestao_df = pd.DataFrame(cliente_classificacao_sugestao)
-            
-            #Transformação: StandardScaler - classificação
-            #Padronizando os dados
-            cliente_standard_sugestao = standard_classificacao.transform(cliente_classificacao_sugestao_df)
-            
-            #Estimando - classificando
-            reavaliacao = tree_tomek.predict(cliente_standard_sugestao)
-            
-            #Condicional de sugestão
-            if reavaliacao == 0:
-                lista_emprestimo.append(i)
-                        
-                if len(lista_emprestimo) == limite:
-                    if emprestimo > lista_emprestimo[-1]: 
-                        st.write('{}, seu crédito de R$ {} não foi aprovado.'.format(usuario, emprestimo))
-                        st.write(' ')
-                        st.write('Mas gostariamos de informar que você foi aprovado para um crédito de R$ {}.'.format(lista_emprestimo[-1]))
-                        st.write('Que tal?')
-                    
-            elif reavaliacao == 1:
-                if len(lista_emprestimo) == limite:
-                    st.write('{}, seu crédito de R$ {} não foi aprovado.'.format(usuario, emprestimo))
-                    st.write('Obrigado pela preferência!')
-
-
-# In[ ]:
-
-
-
-
+       st.write('{}, lamentamos! Seu crédito de R$ {} não foi aprovado.'.format(usuario, emprestimo))
+       st.write('Tente um valor menor.')                       
+        
