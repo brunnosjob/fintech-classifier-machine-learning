@@ -16,14 +16,30 @@ from sklearn.tree import DecisionTreeClassifier
 import pickle
 import streamlit as st
 
-#Cabeçalho
+#Referencias, adicionando sidebar
+# adicionando uma imagem
+image = Image.open('perfil_candidato.jpg')
+st.sidebar.image(image,caption='Bruno R. Carloto',use_column_width=True)
+
+# Blog
+st.sidebar.markdown('Feito por : Bruno Rodrigues')
+
+st.sidebar.markdown("Redes Sociais :")
+st.sidebar.markdown("- [Linkedin](https://www.linkedin.com/in/bruno-rodrigues-carloto)")
+st.sidebar.markdown("- [Medium: Data Marte](https://https://br-cienciadedados.medium.com)")
+st.sidebar.markdown("- [Github](https://https://github.com/brunnosjob)")
+
+#Título
+st.title('Deploy de modelo de machine learning')
 st.header('Machine Learning para serviços financeiros eletrônicos')
-st.subheader('Esta é uma simulação')
 st.subheader('')
 
-#Informe
-st.write('Esse modelo objetiva auxiliar as fintechs acerca de empréstimos automáticos de crédito ao cliente via aplicativo.') 
-st.write('O papel dessa inteligência é aprovar ou negar a solicitação de empréstimo de um determinado cliente a partir de alguns dados pessoais.')
+#Informações sobre o projeto
+st.markdown('---')
+st.markdown('### Sobre o projeto')
+st.markdown('''Como projeto de portfólio de Ciência de Dados, esse modelo objetiva auxiliar as fintechs acerca de empréstimos automáticos de crédito ao cliente via aplicativo.
+O papel dessa inteligência é aprovar ou negar a solicitação de empréstimo de um determinado cliente a partir de alguns dados pessoais.''')
+st.markdown('---')
 
 usuario =  st.text_input('Me informe seu nome para termos uma interação melhor.')
 
@@ -31,9 +47,13 @@ usuario =  st.text_input('Me informe seu nome para termos uma interação melhor
 st.subheader('Simulação')
 st.header('Easy Bank')
 
-renda = st.slider('Me informe sua renda.', 350, 10000, 0)
-idade = st.slider('Agora, preciso saber da sua idade.', 18, 150, 18)
-emprestimo = st.slider('Qual o valor de empréstimo do seu interesse?', 100, 10000, 0)
+renda = st.number_input('Me informe sua renda.')
+idade = st.number_input('Agora, preciso saber da sua idade.', value_min=18)
+emprestimo = st.number_input('Qual o valor de empréstimo do seu interesse?')
+st.markdown('Sem juros')
+parcela = st.radio('Selecione a quantidade de parcela',(1, 2, 3, 4, 5, 6))
+mensalidade = (emprestimo/mensalidade)
+st.write('Se o empréstimo for aprovado, a mensalidade fica de R$ {} por mês'.format(mensalidade))
 
 #Aplicando a inteligência
 st.header('Resultado')
@@ -86,19 +106,23 @@ if classificacao == 0:
         st.write('{}, pedimos desculpas! Nossas ofertas de crédito são a partir de R$ 100,00.'.format(usuario))
         st.write('Obrigado pela preferência!')
     
-    elif emprestimo >= (renda * 0.3):
-        st.write('{}, seu crédito de R$ {} foi aprovado. Parabéns!'.format(usuario, emprestimo))
+    elif mensalidade >= (renda * 0.3):
+        st.write('{}, sua solicitação de empréstimo no valor de R$ {} foi aprovada. Parabéns!'.format(usuario, emprestimo))
         st.write('Mas, atenção! Você está comprometendo mais de 30% de sua renda.')
         st.write('Esses 30% são o limite alerta para se contratar créditos.')
+        st.write('A mensalidade ficou no valor de R$ {} por mês'.format(emprestimo/parcela))
+        st.write('Já efetuamos a transferência. Confira! Agradecemos sua preferência!')
         
     elif emprestimo <= (renda * 0.3):
-        st.write('{}, seu crédito de R$ {} foi aprovado. Parabéns!'.format(usuario, emprestimo))
+        st.write('{}, sua solicitação de no valor R$ {} foi aprovada. Parabéns!'.format(usuario, emprestimo))
+        st.write('A mensalidade ficou no valor de R$ {} por mês'.format(emprestimo/parcela))
+        st.write('Já efetuamos a transferência. Confira! Agradecemos sua preferência!')
                     
     
 if classificacao == 1:
     
     if emprestimo >= 100 and emprestimo <= 330:
-        st.write('{}, pedimos esculpas! Infelizmente não podemos comprometer sua renda. Zelamos por você.'.format(usuario))
+        st.write('{}, pedimos desculpas! Infelizmente não podemos comprometer sua renda. Zelamos por você.'.format(usuario))
         st.write('Obrigado pela preferência')
         
     elif renda < 350:
@@ -106,15 +130,15 @@ if classificacao == 1:
         st.write('Obrigado pela preferência')
     
     elif emprestimo < 100:
-        st.write('{}, pedimos desculpas. Seu crédito de R$ {} foi aprovado. Parabéns!'.format(usuario, emprestimo))
+        st.write('{}, pedimos desculpas. Sua solicitação de empréstimo no valor de R$ {} não foi aprovada.'.format(usuario, emprestimo))
         st.write('Mas gostarias de informar também que nossas ofertas de crédito são a partir de R$ 100,00.')
         st.write('Obrigado pela preferência!')
     
     elif emprestimo <= (renda * 0.3):
-       st.write('{}, lamentamos! Seu crédito de R$ {} não foi aprovado.'.format(usuario, emprestimo))
+       st.write('{}, lamentamos! Sua soliciatação de empréstimo no valor de R$ {} não foi aprovada.'.format(usuario, emprestimo))
        st.write('Tente um valor menor.')             
                          
-    elif emprestimo >= (renda * 0.3):
-       st.write('{}, lamentamos! Seu crédito de R$ {} não foi aprovado.'.format(usuario, emprestimo))
+    elif mensalidade >= (renda * 0.3):
+       st.write('{}, Sua soliciatação de empréstimo no valor de R$ {} não foi aprovada.'.format(usuario, emprestimo))
        st.write('Tente um valor menor.')                       
         
