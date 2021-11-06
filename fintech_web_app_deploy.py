@@ -72,16 +72,6 @@ cliente_standard = standard_classificacao.transform(cliente_classificacao_df)
 #Estimando - classificando
 classificacao = tree_tomek.predict(cliente_standard)
 
-rang = []
-lista_emprestimo = []
-limite_receita = renda * 0.3
-limite_receita = int(limite_receita)
-
-rang = []
-for i in range(emprestimo, limite_receita):
-    rang.append(i)
-    
-limite = len(rang)
 st.write(' ')
 st.write('Atenção! Sendo sua renda de R$ {}; o empréstimo indicado é de no máximo aproximadamente R$ {}'.format(renda, round(renda/3.35), 2))
 st.write(' ')
