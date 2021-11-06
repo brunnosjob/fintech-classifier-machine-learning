@@ -30,8 +30,8 @@ st.header('Machine Learning para serviços financeiros eletrônicos')
 st.subheader('')
 
 #Informações sobre o projeto
-st.markdown('### Sobre o projeto')
-st.markdown('''Como projeto de portfólio de Ciência de Dados, esse modelo objetiva auxiliar as fintechs acerca de empréstimos automáticos de crédito ao cliente via aplicativo.
+st.sidebar.markdown('### Sobre o projeto')
+st.sidebar.markdown('''Como projeto de portfólio de Ciência de Dados, esse modelo objetiva auxiliar as fintechs acerca de empréstimos automáticos de crédito ao cliente via aplicativo.
 O papel dessa inteligência é aprovar ou negar a solicitação de empréstimo de um determinado cliente a partir de alguns dados pessoais.''')
 
 usuario =  st.text_input('Me informe seu nome para termos uma interação melhor.')
