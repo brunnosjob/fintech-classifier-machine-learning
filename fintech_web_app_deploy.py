@@ -26,7 +26,7 @@ st.sidebar.markdown('Feito por : Bruno Rodrigues')
 
 st.sidebar.markdown("Redes Sociais :")
 st.sidebar.markdown("- [Linkedin](https://www.linkedin.com/in/bruno-rodrigues-carloto)")
-st.sidebar.markdown("- [Medium: Data Marte](https://https://br-cienciadedados.medium.com)")
+st.sidebar.markdown("- [Medium](https://https://br-cienciadedados.medium.com)")
 st.sidebar.markdown("- [Github](https://https://github.com/brunnosjob)")
 
 #Título
