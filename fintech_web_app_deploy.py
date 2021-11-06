@@ -16,11 +16,6 @@ from sklearn.tree import DecisionTreeClassifier
 import pickle
 import streamlit as st
 
-#Referencias, adicionando sidebar
-# adicionando uma imagem
-image = Image.open('perfil_candidato.jpg')
-st.sidebar.image(image,caption='Bruno R. Carloto',use_column_width=True)
-
 # Blog
 st.sidebar.markdown('Feito por : Bruno Rodrigues')
 
