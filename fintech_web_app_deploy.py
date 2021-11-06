@@ -85,7 +85,7 @@ if classificacao == 0:
     elif emprestimo >= (renda * 0.3):
         st.write('{}, seu crédito de R$ {} foi aprovado. Parabéns!'.format(usuario, emprestimo))
         st.write('Mas, atenção! Você está comprometendo mais de 30% de sua renda.')
-        st.write('Esses 30% é o limite alerta para se contratar créditos.')
+        st.write('Esses 30% são o limite alerta para se contratar créditos.')
         
     elif emprestimo <= (renda * 0.3):
         st.write('{}, seu crédito de R$ {} foi aprovado. Parabéns!'.format(usuario, emprestimo))
