@@ -70,10 +70,6 @@ cliente_standard = standard_classificacao.transform(cliente_classificacao_df)
 #Estimando - classificando
 classificacao = tree_tomek.predict(cliente_standard)
 
-st.write(' ')
-st.write('Atenção! Sendo sua renda de R$ {}; o empréstimo indicado é de no máximo aproximadamente R$ {}'.format(renda, round(renda/3.35), 2))
-st.write(' ')
-
 #Condição e apresentação
 if classificacao == 0:
      
