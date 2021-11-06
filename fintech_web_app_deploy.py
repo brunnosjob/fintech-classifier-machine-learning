@@ -96,7 +96,7 @@ if classificacao == 0:
         st.write('A mensalidade ficou no valor de R$ {} por mês'.format(mensalidade))
         st.write('Já efetuamos a transferência. Confira! Agradecemos sua preferência!')
         
-    elif emprestimo <= (renda * 0.3):
+    elif mensalidade <= (renda * 0.3):
         st.write('{}, sua solicitação de no valor R$ {} foi aprovada. Parabéns!'.format(usuario, emprestimo))
         st.write('A mensalidade ficou no valor de R$ {} por mês'.format(mensalidade))
         st.write('Já efetuamos a transferência. Confira! Agradecemos sua preferência!')
@@ -117,7 +117,7 @@ if classificacao == 1:
         st.write('Mas gostarias de informar também que nossas ofertas de crédito são a partir de R$ 100,00.')
         st.write('Obrigado pela preferência!')
     
-    elif emprestimo <= (renda * 0.3):
+    elif mensalidade <= (renda * 0.3):
        st.write('{}, lamentamos! Sua soliciatação de empréstimo no valor de R$ {} não foi aprovada.'.format(usuario, emprestimo))
        st.write('Tente um valor menor.')             
                          
