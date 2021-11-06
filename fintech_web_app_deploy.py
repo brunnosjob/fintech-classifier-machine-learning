@@ -34,7 +34,7 @@ st.markdown('### Sobre o projeto')
 st.markdown('''Como projeto de portfólio de Ciência de Dados, esse modelo objetiva auxiliar as fintechs acerca de empréstimos automáticos de crédito ao cliente via aplicativo.
 O papel dessa inteligência é aprovar ou negar a solicitação de empréstimo de um determinado cliente a partir de alguns dados pessoais.''')
 
-usuario =  st.subheader('Me informe seu nome para termos uma interação melhor.')
+usuario =  st.input_text('Me informe seu nome para termos uma interação melhor.')
 st.markdown('---')
 #Criando variáveis 
 st.header('Simulação')
