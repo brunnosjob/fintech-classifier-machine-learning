@@ -42,7 +42,7 @@ st.subheader('Easy Bank')
 
 renda = st.number_input('Me informe sua renda.')
 idade = st.number_input('Agora, preciso saber da sua idade.', 18)
-emprestimo = st.number_input('Qual o valor de empréstimo do seu interesse?', 0, 10000)
+emprestimo = st.number_input('Qual o valor de empréstimo do seu interesse?', 0.0, 10000.00)
 st.markdown('Sem juros')
 parcela = st.radio('Selecione a quantidade de parcela',(1, 2, 3, 4, 5))
 mensalidade = (round((emprestimo/parcela),2))
