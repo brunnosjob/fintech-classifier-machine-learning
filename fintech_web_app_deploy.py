@@ -17,6 +17,11 @@ import pickle
 import streamlit as st
 
 # Blog
+#Informações sobre o projeto
+st.sidebar.markdown('### Sobre o projeto')
+st.sidebar.markdown('''Como projeto de portfólio de Ciência de Dados, esse modelo objetiva auxiliar as fintechs acerca de empréstimos automáticos de crédito ao cliente via aplicativo.
+O papel dessa inteligência é aprovar ou negar a solicitação de empréstimo de um determinado cliente a partir de alguns dados pessoais.''')
+
 st.sidebar.markdown('Feito por : Bruno Rodrigues')
 
 st.sidebar.markdown("Redes Sociais :")
@@ -28,11 +33,6 @@ st.sidebar.markdown("- [Github](https://https://github.com/brunnosjob)")
 st.title('Deploy de modelo de machine learning')
 st.header('Machine Learning para serviços financeiros eletrônicos')
 st.subheader('')
-
-#Informações sobre o projeto
-st.sidebar.markdown('### Sobre o projeto')
-st.sidebar.markdown('''Como projeto de portfólio de Ciência de Dados, esse modelo objetiva auxiliar as fintechs acerca de empréstimos automáticos de crédito ao cliente via aplicativo.
-O papel dessa inteligência é aprovar ou negar a solicitação de empréstimo de um determinado cliente a partir de alguns dados pessoais.''')
 
 usuario =  st.text_input('Me informe seu nome para termos uma interação melhor.')
 st.markdown('---')
