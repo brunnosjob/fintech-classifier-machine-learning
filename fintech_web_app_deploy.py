@@ -47,7 +47,7 @@ idade = st.number_input('Agora, preciso saber da sua idade.', 18)
 emprestimo = st.number_input('Qual o valor de empréstimo do seu interesse?')
 st.markdown('Sem juros')
 parcela = st.radio('Selecione a quantidade de parcela',(1, 2, 3, 4, 5, 6))
-mensalidade = (emprestimo/mensalidade)
+mensalidade = (emprestimo/parcela)
 st.write('Se o empréstimo for aprovado, a mensalidade fica de R$ {} por mês'.format(mensalidade))
 
 #Aplicando a inteligência
