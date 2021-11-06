@@ -93,12 +93,12 @@ if classificacao == 0:
         st.write('{}, sua solicitação de empréstimo no valor de R$ {} foi aprovada. Parabéns!'.format(usuario, emprestimo))
         st.write('Mas, atenção! Você está comprometendo mais de 30% de sua renda.')
         st.write('Esses 30% são o limite alerta para se contratar créditos.')
-        st.write('A mensalidade ficou no valor de R$ {} por mês'.format(emprestimo/parcela))
+        st.write('A mensalidade ficou no valor de R$ {} por mês'.format(mensalidade))
         st.write('Já efetuamos a transferência. Confira! Agradecemos sua preferência!')
         
     elif emprestimo <= (renda * 0.3):
         st.write('{}, sua solicitação de no valor R$ {} foi aprovada. Parabéns!'.format(usuario, emprestimo))
-        st.write('A mensalidade ficou no valor de R$ {} por mês'.format(emprestimo/parcela))
+        st.write('A mensalidade ficou no valor de R$ {} por mês'.format(mensalidade))
         st.write('Já efetuamos a transferência. Confira! Agradecemos sua preferência!')
                     
     
