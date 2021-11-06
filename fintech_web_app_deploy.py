@@ -74,7 +74,11 @@ st.write(' ')
 #Condição e apresentação
 if classificacao == 0:
      
-    if renda >= 100 and renda <= 330:
+    if emprestimo >= 100 and emprestimo <= 330:
+        st.write('{}, pedimos desculpas! Infelizmente não podemos comprometer a sua renda. Zelamos por você.'.format(usuario))
+        st.write('Obrigado pela preferência')
+    
+    elif renda < 350:
         st.write('{}, pedimos desculpas! Infelizmente não podemos comprometer a sua renda. Zelamos por você.'.format(usuario))
         st.write('Obrigado pela preferência')
         
@@ -93,8 +97,12 @@ if classificacao == 0:
     
 if classificacao == 1:
     
-    if renda >= 100 and renda <= 330:
+    if emprestimo >= 100 and emprestimo <= 330:
         st.write('{}, pedimos esculpas! Infelizmente não podemos comprometer sua renda. Zelamos por você.'.format(usuario))
+        st.write('Obrigado pela preferência')
+        
+    elif renda < 350:
+        st.write('{}, pedimos desculpas! Infelizmente não podemos comprometer a sua renda. Zelamos por você.'.format(usuario))
         st.write('Obrigado pela preferência')
     
     elif emprestimo < 100:
