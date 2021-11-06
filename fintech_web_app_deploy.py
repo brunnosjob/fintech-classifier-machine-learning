@@ -30,17 +30,15 @@ st.header('Machine Learning para serviços financeiros eletrônicos')
 st.subheader('')
 
 #Informações sobre o projeto
-st.markdown('---')
 st.markdown('### Sobre o projeto')
 st.markdown('''Como projeto de portfólio de Ciência de Dados, esse modelo objetiva auxiliar as fintechs acerca de empréstimos automáticos de crédito ao cliente via aplicativo.
 O papel dessa inteligência é aprovar ou negar a solicitação de empréstimo de um determinado cliente a partir de alguns dados pessoais.''')
-st.markdown('---')
 
-usuario =  st.text_input('Me informe seu nome para termos uma interação melhor.')
+usuario =  st.subheader('Me informe seu nome para termos uma interação melhor.')
 
 #Criando variáveis 
-st.subheader('Simulação')
-st.header('Easy Bank')
+st.header('Simulação')
+st.subheader('Easy Bank')
 
 renda = st.number_input('Me informe sua renda.')
 idade = st.number_input('Agora, preciso saber da sua idade.', 18)
