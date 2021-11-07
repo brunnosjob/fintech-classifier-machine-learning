@@ -125,7 +125,7 @@ if pag == 'Interação com a inteligência':
             st.write('{}, Sua soliciatação de empréstimo no valor de R$ {} não foi aprovada.'.format(usuario, emprestimo))
             st.write('Tente um valor menor.')                       
 
-elif pag = 'Sobre o projeto':
+elif pag == 'Sobre o projeto':
     
     st.title('Projeto de portfólio de Ciência de Dados')
     st.markdown(' ')
