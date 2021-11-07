@@ -95,7 +95,7 @@ if pag == 'Interagir com a inteligência':
             
         
         elif mensalidade <= (renda * 0.3):
-            st.write('{}, sua solicitação de no valor R$ {} foi aprovada. Parabéns!'.format(usuario, emprestimo))
+            st.write('{}, sua solicitação de empréstimo no valor R$ {} foi aprovada. Parabéns!'.format(usuario, emprestimo))
             st.write('A mensalidade ficou no valor de R$ {} por mês'.format(mensalidade))
         
             if st.button('Posso confirmar a transferência'):
