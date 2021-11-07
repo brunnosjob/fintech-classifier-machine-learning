@@ -22,7 +22,7 @@ st.markdown('### __Observação: para mais informações, clique na seta no cant
 #Indicando do que se trata a web app
 st.sidebar.subheader('Projeto de portfólio de Ciência de Dados')
 st.sidebar.title('Menu')
-pag = st.sidebar.selectbox('Selecione a página', ('Interagir com a inteligência'), ('Sobre o projeto'))
+pag = st.sidebar.selectbox('Selecione a página', ['Interagir com a inteligência', 'Sobre o projeto'])
 
 st.sidebar.markdown('Feito por : Bruno Rodrigues')
 
