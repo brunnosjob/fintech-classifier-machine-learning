@@ -17,7 +17,7 @@ import pickle
 import streamlit as st
 
 #Indicando sidebar
-st.markdown('*__Observação: para mais informações, clique na seta no canto esquerdo superior da tela__* ')
+st.markdown('*__Observação: para mais informações acerca do projeto, clique na seta no canto esquerdo superior da tela__* ')
 
 #Indicando do que se trata a web app
 st.sidebar.subheader('Projeto de portfólio de Ciência de Dados')
