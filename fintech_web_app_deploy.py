@@ -144,6 +144,13 @@ elif pag == 'Sobre o projeto':
     Lidando com a detecção de clientes pagadores, meu modelo tem uma precisão de 98%. Em outras palavras, a cada 1 mil clientes, meu modelo negaria empréstimo erradamente para dois clientes.
     Em termos gerais, meu modelo tem uma acurácia de 98%, ou seja, a cada mil situações, ele acerta 980, errando 20.''')
     
+    st.markdown('##### Você pode interagir com o modelo')
+    st.markdown('''
+    1 - Clique na seta à sua esquerda, na parte superior da tela
+    2 - No tópico Menu Selecione a Página, selecione a opção Interagir com a Inteligência
+    3 - Basta passar as informações solicitadas
+    ''')
+    
     
     
     
