@@ -33,12 +33,11 @@ st.sidebar.markdown("- [Github](https://https://github.com/brunnosjob)")
 
 if pag == 'Interagir com a inteligência':
     
-    st.header('Simulação')
+    st.header('Seja bem-vindo ao Good Bank')
+    st.subheader('Simulação')
     st.markdown(' ')
     usuario =  st.text_input('Me informe seu nome para termos uma interação melhor.')
-    st.markdown('---')
-    #Criando variáveis 
-    st.subheader('Seja bem-vindx à área Good Bank Loan')
+    st.markdown(' ')
 
     renda = st.number_input('Me informe sua renda.')
     idade = st.number_input('Agora, preciso saber da sua idade.', 18)
@@ -130,4 +129,22 @@ elif pag == 'Sobre o projeto':
     st.title('Projeto de portfólio de Ciência de Dados')
     st.markdown(' ')
     st.markdown('### Machine learning para serviços financeiros tecnológicos')
-      
+    st.markdown('''Esse é um projeto de portfólio de Ciência de Dados. Mais especificamente, esse é um projeto de machine learning classificador. 
+                O objetivo específico do projeto é o desenvolvimento de um modelo de machine learning eficiente capaz de prever e classificar se um dado cliente,
+                ao fazer uma solicitação de empréstimo, irá pagá-lo ou não. Tendo o modelo de machine learning uma alta eficiência, ocorre a redução de inadimplência.''')
+    st.markdown('### Contextualização')
+    st.markdown('''Suponhamos que o Banco Noronha é um pequeno banco e está com 30% de seus clientes inadimplentes em relação a empréstimo. Isso tem sido ruim para a empresa.
+    Nesse cenário, os empréstimos são solicitados presencialmente. Dessa forma, a diretoria chegou à conclusão que, com os sistemas atuais, a empresa continuaria tendo esse problema de inadimplência,
+    portanto, a solução seria métodos melhores de avaliação de condição de clientes para liberação de empréstimo. Uma das propostas é o pequeno banco se tornar em uma fintech, passando a se chamar Good Bank, e realizar empréstimos automáticos através de aplicativo.
+    A liberação de empréstimo seria feita por inteligência artificial e o alcance da empresa seria muito maior. Sendo assim, a empresa iniciou sua transformação e solicitou o desenvolvimento de uma inteligência artificial eficiente para automatizar a liberação ou negação de empréstimo.''')
+    st.markdown('### Qual seria o impacto do meu projeto de machine learning, uma subárea da inteligência artificial, na redução de inadimplência do banco, que passa a ser fintech?')
+    st.markdown('''Meu modelo tem uma precisão de 97% em detectar clientes que não pagarão determinados empréstimos, ou seja, a cada 1 mil empréstimos, apenas 30 não pagariam. De 300 a cada 1 mil, cairia para 30 a cada 1 mil.
+    Uma outra questão a se considerar é que o banco pode negar erradamente empréstimo a um determinado cliente que pagaria um dado empréstimo que ele mesmo solicitou. 
+    Isso ocorre quando o sistema de liberação de empréstimo classifica erradamente o cliente como quem não pagará o empréstimo solicitado. Dessa forma, o banco deixa de ganhar por negar empréstimo a quem pagaria o valor do empréstimo.
+    Lidando com a detecção de clientes pagadores, meu modelo tem uma precisão de 98%. Em outras palavras, a cada 1 mil clientes, meu modelo negaria empréstimo erradamente para dois clientes.
+    Em termos gerais, meu modelo tem uma acurácia de 98%, ou seja, a cada mil situações, ele acerta 980, errando 20.''')
+    
+    
+    
+    
+    
