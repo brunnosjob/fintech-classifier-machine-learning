@@ -16,6 +16,9 @@ from sklearn.tree import DecisionTreeClassifier
 import pickle
 import streamlit as st
 
+image = Image.open('perfil_candidato.jpg')
+st.sidebar.image(image,caption='Bruno R. Carloto',use_column_width=True)
+
 # Blog
 #Informações sobre o projeto
 st.sidebar.markdown('### Sobre o projeto')
