@@ -24,7 +24,7 @@ st.sidebar.subheader('Projeto de portfólio de Ciência de Dados')
 st.sidebar.title('Menu')
 pag = st.sidebar.selectbox('Selecione a página', ['Interagir com a inteligência', 'Sobre o projeto'])
 
-st.sidebar.markdown('Feito por : Bruno Rodrigues')
+st.sidebar.markdown('Feito por : Bruno Rodrigues Carloto')
 
 st.sidebar.markdown("Redes Sociais :")
 st.sidebar.markdown("- [Linkedin](https://www.linkedin.com/in/bruno-rodrigues-carloto)")
