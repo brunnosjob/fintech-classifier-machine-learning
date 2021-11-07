@@ -7,7 +7,6 @@
 
 
 #Importando bibliotecas
-from PIL import Image
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import OneHotEncoder
@@ -16,9 +15,6 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.tree import DecisionTreeClassifier
 import pickle
 import streamlit as st
-
-foto = Image.open('perfil_candidato.jpg')
-st.sidebar.image(foto,caption='Bruno R. Carloto',use_column_width=True)
 
 # Blog
 #Informações sobre o projeto
