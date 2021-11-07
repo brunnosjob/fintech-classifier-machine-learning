@@ -147,7 +147,9 @@ elif pag == 'Sobre o projeto':
     st.markdown('##### Você pode interagir com o modelo')
     st.markdown('''
     1 - Clique na seta à sua esquerda, na parte superior da tela
+    
     2 - No tópico Menu Selecione a Página, selecione a opção Interagir com a Inteligência
+   
     3 - Basta passar as informações solicitadas
     ''')
     
