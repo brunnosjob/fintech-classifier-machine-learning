@@ -31,7 +31,7 @@ st.sidebar.markdown("- [Linkedin](https://www.linkedin.com/in/bruno-rodrigues-ca
 st.sidebar.markdown("- [Medium](https://https://br-cienciadedados.medium.com)")
 st.sidebar.markdown("- [Github](https://https://github.com/brunnosjob)")
 
-if pag == 'Interação com a inteligência:
+if pag == 'Interação com a inteligência':
     
     st.header('Simulação')
     st.markdown(' ')
