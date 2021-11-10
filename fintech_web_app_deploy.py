@@ -164,46 +164,46 @@ elif pag == 'Dashboard da base de dados do projeto':
     st.markdown(' ')
     st.markdown('PÁGINA EM CONSTRUIÇÃO!')
     
-    photo = Image.open('104.png')
+    photo = Image.open('104.jpeg')
     st.image(photo, use_column_width=True)
        
-    photo = Image.open('105.png')
+    photo = Image.open('105.jpeg')
     st.image(photo, use_column_width=True)
         
 
-    photo = Image.open('106.png')
+    photo = Image.open('106.jpeg)
     st.image(photo, use_column_width=True)
 
-    photo = Image.open('107.png')
+    photo = Image.open('107.jpeg')
     st.image(photo, use_column_width=True)
  
 
-    photo = Image.open('109.png')
+    photo = Image.open('109.jpeg')
     st.image(photo, use_column_width=True)
        
 
-    photo = Image.open('110.png')
+    photo = Image.open('110.jpeg')
     st.image(photo, use_column_width=True)
         
-    photo = Image.open('111.png')
+    photo = Image.open('111.jpeg')
     st.image(photo, use_column_width=True)
         
 
-    photo = Image.open('112.png')
+    photo = Image.open('112.jpeg')
     st.image(photo, use_column_width=True)
 
 
-    photo = Image.open('113.png')
+    photo = Image.open('113.jpeg')
     st.image(photo, use_column_width=True)
        
 
-    photo = Image.open('116.png')
+    photo = Image.open('116.jpeg')
     st.image(photo, use_column_width=True)
         
-    photo = Image.open('117.png')
+    photo = Image.open('117.jpeg')
     st.image(photo, use_column_width=True)
         
-    photo = Image.open('118.png')
+    photo = Image.open('118.jpeg')
     st.image(photo, use_column_width=True)
     
     
