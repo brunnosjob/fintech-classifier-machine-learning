@@ -171,7 +171,7 @@ elif pag == 'Dashboard da base de dados do projeto':
     st.image(photo1, use_column_width=True)
         
 
-    photo2 = Image.open('106.jpeg)
+    photo2 = Image.open('106.jpeg')
     st.image(photo2, use_column_width=True)
 
     photo3 = Image.open('107.jpeg')
