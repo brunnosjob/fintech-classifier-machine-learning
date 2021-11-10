@@ -14,6 +14,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.tree import DecisionTreeClassifier
 from matplotlib.backends.backend_agg import RendererAgg
+from PIL import Image
 import pickle
 import streamlit as st
 
