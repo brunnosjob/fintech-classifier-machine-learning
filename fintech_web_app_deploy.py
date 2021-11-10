@@ -244,8 +244,6 @@ elif pag == 'Dashboard da base de dados do projeto':
     
     st.markdown(' ')
     st.markdown(' ')
-    
-    st.markdown(' ')
     st.markdown(' ')
     
     st.markdown('###### Você pode interagir com o modelo')
