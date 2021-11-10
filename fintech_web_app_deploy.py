@@ -18,7 +18,7 @@ import streamlit as st
 
 #Indicando sidebar
 st.markdown('*__Observação: para mais informações acerca do projeto, clique na seta no canto esquerdo superior da tela__* ')
-st.markdown("*__Leia o artigo do projeto_*: [Medium](https://br-cienciadedados.medium.com/projeto-de-machine-learning-ii-9c889faec8df"))
+st.markdown("-__*Leia o [Artigo do projeto](https://br-cienciadedados.medium.com/projeto-de-machine-learning-ii-9c889faec8df)")
 
 #Indicando do que se trata a web app
 st.sidebar.subheader('Projeto de portfólio de Ciência de Dados')
