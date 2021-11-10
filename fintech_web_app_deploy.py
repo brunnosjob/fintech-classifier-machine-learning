@@ -163,6 +163,7 @@ elif pag == 'Dashboard da base de dados do projeto':
     st.title('Dashboard da base de dados do projeto')
     st.markdown('### Gráficos da análise exploratória')
     st.markdown(' ')
+    st.markdown(' ')
     
     photo0 = Image.open('104.png')
     st.image(photo0, use_column_width=True)
