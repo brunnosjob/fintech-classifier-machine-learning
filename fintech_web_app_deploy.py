@@ -159,13 +159,12 @@ elif pag == 'Sobre o projeto':
     ''')
     
 elif pag == 'Dashboard da base de dados do projeto':
-    #Criando a página
     st.title('Dashboard da base de dados do projeto')
     st.markdown('### Gráficos da análise exploratória')
-        
+    
     _lock = RendererAgg.lock
-        
-     graf1, graf2, graf3, , graf4, graf5, graf6, graf7, graf8, graf9, graf10, graf11, graf12 = st.columns((.1,1,.1,1,.1,1,.1,1,.1,1,.1,1,.1,1))
+    
+    graf1, graf2, graf3, , graf4, graf5, graf6, graf7, graf8, graf9, graf10, graf11, graf12 = st.columns((.1,1,.1,1,.1,1,.1,1,.1,1,.1,1,.1,1))
     
     
     
