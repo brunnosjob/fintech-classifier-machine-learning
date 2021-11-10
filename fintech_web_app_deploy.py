@@ -168,13 +168,13 @@ elif pag == 'Dashboard da base de dados do projeto':
     
     photo0 = Image.open('104.png')
     st.image(photo0, use_column_width=True)
-    st.markdown('De acordo com o gráfico, banco possui uma clientela consideravelmente diversificada no tocante à renda, quando o intervalo está entre R$ 2 mil e R$ 7 mil.')
+    st.markdown('De acordo com o gráfico, o banco possui uma clientela consideravelmente diversificada no tocante à renda, quando o intervalo está entre R$ 2 mil e R$ 7 mil.')
     st.markdown(' ')
     st.markdown(' ')
        
     photo1 = Image.open('105.png')
     st.image(photo1, use_column_width=True)
-    st.markdown('Segundo o gráfico, quanto maior o valor do empréstimo, menor a quantidade de clientes adquirindo esses valores.')
+    st.markdown('Segundo o gráfico, quanto maior o valor do empréstimo, menor a quantidade de clientes o adquirindo.')
     st.markdown(' ')
     st.markdown(' ')
         
@@ -204,7 +204,7 @@ elif pag == 'Dashboard da base de dados do projeto':
 
     photo5 = Image.open('110.png')
     st.image(photo5, use_column_width=True)
-    st.markdown('''De acordo com o gráfico, partir de aproximadamente 40 anos, os clientes são pagadores. 
+    st.markdown('''De acordo com o gráfico, a partir de aproximadamente 40 anos, os clientes são pagadores. 
     Não há clientes acima de 40 anos inadimplente. Isso evidencia a tendência à sensibilidade do modelo para com a idade e o valor do empréstimo.''')
     st.markdown(' ')
     st.markdown(' ')
@@ -235,7 +235,8 @@ elif pag == 'Dashboard da base de dados do projeto':
     photo = Image.open('118.png')
     st.image(photo, use_column_width=True)
     st.markdown('''O gráfico evidencia a diversidade de pagadores tanto na renda quanto na idade, porém, 
-                evidencia o grupo jovem de inadimplentes, com diferentes rendas, no entanto, com idade inferior a 40 anos.''')
+                evidencia o grupo de inadimplentes, com diferentes rendas, no entanto, com idade inferior a 40 anos. Sendo assim, 
+                a inadimplência para com o banco está em função dos mais jovens.''')
     
     st.markdown(' ')
     st.markdown(' ')
