@@ -164,56 +164,46 @@ elif pag == 'Dashboard da base de dados do projeto':
     st.markdown(' ')
     st.markdown('PÁGINA EM CONSTRUIÇÃO!')
     
-    _lock = RendererAgg.lock
-    
-    graf1, graf2, graf3, graf4, graf5, graf6, graf7, graf8, graf9, graf10, graf11, graf12 = st.columns((.1,1,.1,1,.1,1,.1,1,.1,1,.1,1,.1,1))
-    
-    with graf1, _lock:
-        photo = Image.open('104.png')
-        st.image(photo, use_column_width=True)
+    photo = Image.open('104.png')
+    st.image(photo, use_column_width=True)
        
-    with graf2, _lock:
-        photo = Image.open('105.png')
-        st.image(photo, use_column_width=True)
+    photo = Image.open('105.png')
+    st.image(photo, use_column_width=True)
         
-    with graf3, _lock:
-        photo = Image.open('106.png')
-        st.image(photo, use_column_width=True)
-        
-    with graf4, _lock:
-        photo = Image.open('107.png')
-        st.image(photo, use_column_width=True)
- 
-    with graf5, _lock:
-        photo = Image.open('109.png')
-        st.image(photo, use_column_width=True)
-       
-    with graf6, _lock:
-        photo = Image.open('110.png')
-        st.image(photo, use_column_width=True)
-        
-    with graf7, _lock:
-        photo = Image.open('111.png')
-        st.image(photo, use_column_width=True)
-        
-    with graf8, _lock:
-        photo = Image.open('112.png')
-        st.image(photo, use_column_width=True)
 
-    with graf9, _lock:
-        photo = Image.open('113.png')
-        st.image(photo, use_column_width=True)
+    photo = Image.open('106.png')
+    st.image(photo, use_column_width=True)
+
+    photo = Image.open('107.png')
+    st.image(photo, use_column_width=True)
+ 
+
+    photo = Image.open('109.png')
+    st.image(photo, use_column_width=True)
        
-    with graf10, _lock:
-        photo = Image.open('116.png')
-        st.image(photo, use_column_width=True)
+
+    photo = Image.open('110.png')
+    st.image(photo, use_column_width=True)
         
-    with graf11, _lock:
-        photo = Image.open('117.png')
-        st.image(photo, use_column_width=True)
+    photo = Image.open('111.png')
+    st.image(photo, use_column_width=True)
         
-    with graf12, _lock:
-        photo = Image.open('118.png')
-        st.image(photo, use_column_width=True)
+
+    photo = Image.open('112.png')
+    st.image(photo, use_column_width=True)
+
+
+    photo = Image.open('113.png')
+    st.image(photo, use_column_width=True)
+       
+
+    photo = Image.open('116.png')
+    st.image(photo, use_column_width=True)
+        
+    photo = Image.open('117.png')
+    st.image(photo, use_column_width=True)
+        
+    photo = Image.open('118.png')
+    st.image(photo, use_column_width=True)
     
     
