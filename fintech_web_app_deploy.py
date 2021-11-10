@@ -7,13 +7,13 @@
 
 
 #Importando bibliotecas
-import matplotlib.backends.backend_agg import RendererAgg
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.tree import DecisionTreeClassifier
+from matplotlib.backends.backend_agg import RendererAgg
 import pickle
 import streamlit as st
 
