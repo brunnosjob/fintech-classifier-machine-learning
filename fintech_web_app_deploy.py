@@ -196,7 +196,7 @@ elif pag == 'Dashboard da base de dados do projeto':
     photo4 = Image.open('109.png')
     st.image(photo4, use_column_width=True)
     st.markdown('''O gráfico evidencia que, em torno de R$ 2 mil para menos, não houve inadimplência. 
-    Dessa forma, pode ser que o modelo venha a ter o comportamento de somente liberar empréstimos para jovens no valor em torno de R$ 2 mil para menos, 
+    Dessa forma, pode ser que o modelo de machine learning venha a ter o comportamento de somente liberar empréstimos para jovens no valor em torno de R$ 2 mil para menos, 
     isso dependendo também da renda.''')
     st.markdown(' ')
     st.markdown(' ')
