@@ -7,6 +7,7 @@
 
 
 #Importando bibliotecas
+import matplotlib.backends.backend_agg import RendererAgg
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import OneHotEncoder
