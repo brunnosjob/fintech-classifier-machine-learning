@@ -137,13 +137,14 @@ elif pag == 'Sobre o projeto':
                 O objetivo específico do projeto é o desenvolvimento de um modelo de machine learning eficiente capaz de prever e classificar se um dado cliente,
                 ao fazer uma solicitação de empréstimo, irá pagá-lo ou não. Tendo o modelo de machine learning uma alta eficiência, ocorre a redução de inadimplência.''')
     st.markdown('### Contextualização')
-    st.markdown('''Suponhamos que o Banco Noronha é um pequeno banco e está com 30% de seus clientes inadimplentes em relação a empréstimo. Isso tem sido ruim para a empresa.
+    st.markdown('''Suponhamos que o Banco Noronha é um pequeno banco e está com aproximadamente 14% de seus clientes inadimplentes em relação a empréstimo. Isso tem sido ruim para a empresa.
     Os empréstimos são solicitados presencialmente. Dessa forma, a diretoria chegou à conclusão que, com os sistemas atuais, a empresa continuaria tendo esse problema de inadimplência,
     portanto, a solução seria métodos melhores de avaliação de condição de clientes para liberação de empréstimo. Uma das propostas é o pequeno banco se tornar em uma fintech, passando a se chamar Good Bank, e realizar empréstimos automáticos através de aplicativo.
     A liberação de empréstimo seria feita por inteligência artificial e o alcance da empresa seria muito maior. Sendo assim, a empresa iniciou sua transformação e solicitou o desenvolvimento de uma inteligência artificial eficiente para automatizar a liberação ou negação de empréstimo.''')
     st.markdown('##### Qual seria o impacto do meu projeto de machine learning, uma subárea da inteligência artificial, na redução de inadimplência do banco, que passa a ser fintech?')
-    st.markdown('''Meu modelo tem uma precisão de 97% em detectar clientes que não pagarão determinados empréstimos, ou seja, a cada 1 mil empréstimos, apenas 30 não pagariam. De 300 a cada 1 mil, cairia para 30 a cada 1 mil.
-    Isso é uma redução de 90% da inadimplência.''')
+    st.markdown('''Meu modelo tem uma precisão de 97% em detectar clientes que não pagarão determinados empréstimos, 
+    ou seja, a cada 1 mil empréstimos, cerca de apenas 30 clientes não os pagariam. Seu impacto sobre o banco é de reduzir a inadimplência em aproximadamente 79%, isso é, de aproximadamente 14% de inadimplentes,
+    o banco teria em torno de 3% de inadimplentes.''')
     
     st.markdown('''Uma outra questão a se considerar é que o banco pode negar erradamente empréstimo a um determinado cliente que pagaria um dado empréstimo que ele mesmo solicitou. 
     Isso ocorre quando o sistema de liberação de empréstimo classifica erradamente o cliente como quem não pagará o empréstimo solicitado. Dessa forma, o banco deixa de ganhar por negar empréstimo a quem pagaria o preço pelo uso do mesmo.
