@@ -170,6 +170,7 @@ elif pag == 'Dashboard da base de dados do projeto':
     st.image(photo0, use_column_width=True)
     st.markdown('De acordo com o gráfico, banco possui uma clientela consideravelmente diversificada no tocante à renda, quando o intervalo está entre R$ 2 mil e R$ 7 mil.')
     st.markdown(' ')
+    st.markdown(' ')
        
     photo1 = Image.open('105.png')
     st.image(photo1, use_column_width=True)
