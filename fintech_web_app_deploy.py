@@ -164,44 +164,44 @@ elif pag == 'Dashboard da base de dados do projeto':
     st.markdown(' ')
     st.markdown('PÁGINA EM CONSTRUIÇÃO!')
     
-    photo = Image.open('104.jpeg')
-    st.image(photo, use_column_width=True)
+    photo0 = Image.open('104.jpeg')
+    st.image(photo0, use_column_width=True)
        
-    photo = Image.open('105.jpeg')
-    st.image(photo, use_column_width=True)
+    photo1 = Image.open('105.jpeg')
+    st.image(photo1, use_column_width=True)
         
 
-    photo = Image.open('106.jpeg)
-    st.image(photo, use_column_width=True)
+    photo2 = Image.open('106.jpeg)
+    st.image(photo2, use_column_width=True)
 
-    photo = Image.open('107.jpeg')
-    st.image(photo, use_column_width=True)
+    photo3 = Image.open('107.jpeg')
+    st.image(photo3, use_column_width=True)
  
 
-    photo = Image.open('109.jpeg')
-    st.image(photo, use_column_width=True)
+    photo4 = Image.open('109.jpeg')
+    st.image(photo4, use_column_width=True)
        
 
-    photo = Image.open('110.jpeg')
-    st.image(photo, use_column_width=True)
+    photo5 = Image.open('110.jpeg')
+    st.image(photo5, use_column_width=True)
         
-    photo = Image.open('111.jpeg')
-    st.image(photo, use_column_width=True)
+    photo6 = Image.open('111.jpeg')
+    st.image(photo6, use_column_width=True)
         
 
-    photo = Image.open('112.jpeg')
-    st.image(photo, use_column_width=True)
+    photo7 = Image.open('112.jpeg')
+    st.image(photo7, use_column_width=True)
 
 
-    photo = Image.open('113.jpeg')
-    st.image(photo, use_column_width=True)
+    photo8 = Image.open('113.jpeg')
+    st.image(photo8, use_column_width=True)
        
 
-    photo = Image.open('116.jpeg')
-    st.image(photo, use_column_width=True)
+    photo9 = Image.open('116.jpeg')
+    st.image(photo9, use_column_width=True)
         
-    photo = Image.open('117.jpeg')
-    st.image(photo, use_column_width=True)
+    photo10 = Image.open('117.jpeg')
+    st.image(photo10, use_column_width=True)
         
     photo = Image.open('118.jpeg')
     st.image(photo, use_column_width=True)
