@@ -143,8 +143,8 @@ elif pag == 'Sobre o projeto':
     A liberação de empréstimo seria feita por inteligência artificial e o alcance da empresa seria muito maior. Sendo assim, a empresa iniciou sua transformação e solicitou o desenvolvimento de uma inteligência artificial eficiente para automatizar a liberação ou negação de empréstimo.''')
     st.markdown('##### Qual seria o impacto do meu projeto de machine learning, uma subárea da inteligência artificial, na redução de inadimplência do banco, que passa a ser fintech?')
     st.markdown('''Meu modelo tem uma precisão de 97% em detectar clientes que não pagarão determinados empréstimos, 
-    ou seja, a cada 1 mil empréstimos, cerca de apenas 30 clientes não os pagariam. Seu impacto sobre o banco é de reduzir a inadimplência em aproximadamente 79%, isso é, de aproximadamente 14% de inadimplentes,
-    o banco teria em torno de 3% de inadimplentes.''')
+    ou seja, a cada 1 mil empréstimos, cerca de apenas 30 clientes não os pagariam. Seu impacto sobre o banco é de reduzir a inadimplência em aproximadamente 79%, ou seja, de cerca de 14% de inadimplentes,
+    cairia para em torno de 3%.''')
     
     st.markdown('''Uma outra questão a se considerar é que o banco pode negar erradamente empréstimo a um determinado cliente que pagaria um dado empréstimo que ele mesmo solicitou. 
     Isso ocorre quando o sistema de liberação de empréstimo classifica erradamente o cliente como quem não pagará o empréstimo solicitado. Dessa forma, o banco deixa de ganhar por negar empréstimo a quem pagaria o preço pelo uso do mesmo.
