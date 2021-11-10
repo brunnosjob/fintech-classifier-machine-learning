@@ -161,6 +161,8 @@ elif pag == 'Sobre o projeto':
 elif pag == 'Dashboard da base de dados do projeto':
     st.title('Dashboard da base de dados do projeto')
     st.markdown('### Gráficos da análise exploratória')
+    st.markdown(' ')
+    st.markdown('PÁGINA EM CONSTRUIÇÃO!')
     
     _lock = RendererAgg.lock
     
