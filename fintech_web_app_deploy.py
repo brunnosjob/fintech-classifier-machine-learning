@@ -227,6 +227,7 @@ elif pag == 'Dashboard da base de dados do projeto':
     st.markdown('''O gráfico evidencia a diversidade de pagadores tanto na renda quanto na idade, porém, 
                 evidencia o grupo jovem de inadimplentes, com diferentes rendas, no entanto, com idade inferior a 40 anos.''')
     
-    
+    st.markdown(' ')
+    st.markdown(' ')
     st.markdown('###### Dashboard by Bruno R. Carloto')
     
