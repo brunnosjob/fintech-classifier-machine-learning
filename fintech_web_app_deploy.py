@@ -175,17 +175,20 @@ elif pag == 'Dashboard da base de dados do projeto':
     st.image(photo1, use_column_width=True)
     st.markdown('Segundo o gráfico, quanto maior o valor do empréstimo, menor a quantidade de clientes adquirindo esses valores.')
     st.markdown(' ')
+    st.markdown(' ')
         
 
     photo2 = Image.open('106.png')
     st.image(photo2, use_column_width=True)
     st.markdown('Conforme o gráfico, o banco possui uma clientela consideravelmente diversificada em relação à idade, ou seja, não há uma predominância de jovens ou de idosos.')
     st.markdown(' ')
+    st.markdown(' ')
 
 
     photo3 = Image.open('107.png')
     st.image(photo3, use_column_width=True)
     st.markdown('Segundo o gráfico, há uma maior quantidade de clientes que cumpriram com suas obrigações, pagando os empréstimos, do que clientes inadimplentes.')
+    st.markdown(' ')
     st.markdown(' ')
  
 
@@ -195,12 +198,14 @@ elif pag == 'Dashboard da base de dados do projeto':
     Dessa forma, pode ser que o modelo venha a ter o comportamento de somente liberar empréstimos para jovens no valor em torno de R$ 2 mil para menos, 
     isso dependendo também da renda.''')
     st.markdown(' ')
+    st.markdown(' ')
        
 
     photo5 = Image.open('110.png')
     st.image(photo5, use_column_width=True)
     st.markdown('''De acordo com o gráfico, partir de aproximadamente 40 anos, os clientes são pagadores. 
     Não há clientes acima de 40 anos inadimplente. Isso evidencia a tendência à sensibilidade do modelo para com a idade e o valor do empréstimo.''')
+    st.markdown(' ')
     st.markdown(' ')
         
     photo6 = Image.open('111.png')
@@ -209,17 +214,20 @@ elif pag == 'Dashboard da base de dados do projeto':
     ou seja, há pessoas com renda igual a R$ 2000,00 que pagam seus deveres, como há as que estão inadimplentes, assim como, 
     há pessoas que ganham R$ 7000,00 que pagam seus deveres, como há as que estão inadimplentes. Em outras palavras, a renda não é um fator sensível para definir o pagamento do empréstimo.''')
     st.markdown(' ')
+    st.markdown(' ')
         
 
     photo7 = Image.open('112.png')
     st.image(photo7, use_column_width=True)
     st.markdown('Conforme o gráfico, a probabilidade de inadimplência entre aproximadamente os 20 anos e os 37 anos é muito maior do que de pagamento.')
     st.markdown(' ')
+    st.markdown(' ')
 
 
     photo8 = Image.open('113.png')
     st.image(photo8, use_column_width=True)
     st.markdown('Até aproximadamente R$ 4500,00, a probabilidade de pagamento é maior do que de não pagamento.')
+    st.markdown(' ')
     st.markdown(' ')
       
         
