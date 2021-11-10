@@ -228,3 +228,5 @@ elif pag == 'Dashboard da base de dados do projeto':
                 evidencia o grupo jovem de inadimplentes, com diferentes rendas, no entanto, com idade inferior a 40 anos.''')
     
     
+    st.markdown('##### Dashboard by Bruno R. Carloto')
+    
