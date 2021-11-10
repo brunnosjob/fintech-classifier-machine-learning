@@ -185,7 +185,7 @@ elif pag == 'Dashboard da base de dados do projeto':
     photo3 = Image.open('107.png')
     st.image(photo3, use_column_width=True)
     st.markdown('Segundo o gráfico, há uma maior quantidade de clientes que cumpriram com suas obrigações, pagando os empréstimos, do que clientes inadimplentes.')
-    st.mardkdown(' ')
+    st.markdown(' ')
  
 
     photo4 = Image.open('109.png')
