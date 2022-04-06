@@ -139,17 +139,17 @@ elif pag == 'Sobre o projeto':
     st.markdown('### Contextualização')
     st.markdown('''Suponhamos que o Banco Noronha é um pequeno banco e está com aproximadamente 14% de seus clientes inadimplentes em relação a empréstimo. Isso tem sido ruim para a empresa.
     Os empréstimos são solicitados presencialmente. Dessa forma, a diretoria chegou à conclusão que, com os sistemas atuais, a empresa continuaria tendo esse problema de inadimplência,
-    portanto, a solução seria métodos melhores de avaliação de condição de clientes para liberação de empréstimo. Uma das propostas é o pequeno banco se tornar em uma fintech, passando a se chamar Good Bank, e realizar empréstimos automáticos através de aplicativo.
-    A liberação de empréstimo seria feita por inteligência artificial e o alcance da empresa seria muito maior. Sendo assim, a empresa iniciou sua transformação e solicitou o desenvolvimento de uma inteligência artificial eficiente para automatizar a liberação ou negação de empréstimo.''')
+    portanto, a solução seria métodos melhores de avaliação de condição de clientes para liberação de empréstimo. Uma das propostas é o pequeno banco se tornar em uma fintech, passando a se chamar Good Bank, e adentrando na realização automática de empréstimos através de aplicativo.
+    A liberação de empréstimo seria, portanto, feita por inteligência artificial e o alcance da empresa seria muito maior. Sendo assim, a empresa iniciou sua transformação e solicitou o desenvolvimento de uma inteligência artificial eficiente para automatizar a concessão ou negação de empréstimo.''')
     st.markdown('##### Qual seria o impacto do meu projeto de machine learning, uma subárea da inteligência artificial, na redução de inadimplência do banco, que passa a ser fintech?')
     st.markdown('''Meu modelo tem uma precisão de 97% em detectar clientes que não pagarão determinados empréstimos, 
     ou seja, a cada 1 mil empréstimos, cerca de apenas 30 clientes não os pagariam. Seu impacto sobre o banco é de reduzir a inadimplência em aproximadamente 79%, ou seja, de cerca de 14% de inadimplentes,
     cairia para em torno de 3%.''')
     
-    st.markdown('''Uma outra questão a se considerar é que o banco pode negar erradamente empréstimo a um determinado cliente que pagaria um dado empréstimo que ele mesmo solicitou. 
-    Isso ocorre quando o sistema de liberação de empréstimo classifica erradamente o cliente como quem não pagará o empréstimo solicitado. Dessa forma, o banco deixa de ganhar por negar empréstimo a quem pagaria o preço pelo uso do mesmo.
-    Lidando com a detecção de clientes pagadores, meu modelo tem uma precisão de 98%. Em outras palavras, a cada 1 mil clientes, meu modelo negaria empréstimo erradamente para 20 clientes.
-    Em termos gerais, meu modelo tem uma acurácia de 98%, ou seja, a cada mil situações, ele acerta 980, errando 20.''')
+    st.markdown('''Uma outra questão a se considerar é que o banco pode negar erroneamente empréstimo a um determinado cliente que pagaria um dado empréstimo que ele mesmo solicitou. 
+    Isso ocorre quando o sistema de liberação de empréstimo classifica erradamente o cliente como quem não pagará o empréstimo solicitado. Sendo assim, o banco deixa de ganhar por negar empréstimo a quem pagaria o preço pelo uso do mesmo.
+    Lidando com a detecção de clientes pagadores, meu modelo tem uma precisão de 98%. Em outras palavras, a cada 1 mil clientes, meu modelo negaria empréstimo erroneamente para 20 clientes.
+    Em termos gerais, meu modelo tem uma acurácia de 98%, ou seja, a cada 1 mil situações, ele acerta 980, errando 20.''')
     
     st.markdown('##### Você pode interagir com o modelo')
     st.markdown('''
