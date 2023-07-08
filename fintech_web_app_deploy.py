@@ -22,6 +22,8 @@ import streamlit as st
 st.markdown('*__Observação: para mais informações acerca do projeto, clique na seta no canto esquerdo superior da tela__* ')
 
 #Indicando do que se trata a web app
+foto = Image.open('brn.png')
+st.sidebar.image(foto, use_column_width=True)
 st.sidebar.subheader('Projeto de portfólio de Ciência de Dados')
 st.sidebar.markdown('''Leia o [artigo do projeto](https://br-cienciadedados.medium.com/projeto-de-machine-learning-ii-9c889faec8df), o qual descreve o passo a passo
 do desenvolvimento do modelo de machine learning. As descrições vão desde a limpeza dos dados até à análise do desempenho dos modelos e a seleção do melhor.''')
