@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+o#!/usr/bin/env python
 # coding: utf-8
 
 # # web app
@@ -57,7 +57,7 @@ if pag == 'Interagir com a inteligência':
     #Carregando modelos
 
     #Classificador
-    with open('random_forest_regression_fintech.pkl', 'rb') as f:
+    with open('decision_tree_classifier_fintech.pkl', 'rb') as f:
         standard_classificacao, tree_tomek = pickle.load(f)
         
 
