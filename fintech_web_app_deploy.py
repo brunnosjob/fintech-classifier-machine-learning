@@ -96,11 +96,17 @@ if pag == 'Interagir com a inteligência':
             st.write('{}, pedimos desculpas! Nossas ofertas de crédito são a partir de R$ 100,00.'.format(usuario))
             st.write('Obrigado pela preferência!')
     
-        elif mensalidade >= (renda * 0.3):
+        elif mensalidade >= (renda * 0.3) and parcela == 1:
             st.write('{}, sua solicitação de empréstimo no valor de R$ {} foi aprovada. Parabéns!'.format(usuario, emprestimo))
             st.write('Mas, atenção! Você está comprometendo mais de 30% de sua renda.')
             st.write('Esses 30% são o limite alerta para se contratar créditos.')
-            st.write('A mensalidade ficou no valor de R$ {} por mês'.format(mensalidade))
+            st.write('Pagamento à vista, no valor de R$ {}.'.format(mensalidade))
+
+        elif mensalidade >= (renda * 0.3) and parcela != 1:
+            st.write('{}, sua solicitação de empréstimo no valor de R$ {} foi aprovada. Parabéns!'.format(usuario, emprestimo))
+            st.write('Mas, atenção! Você está comprometendo mais de 30% de sua renda.')
+            st.write('Esses 30% são o limite alerta para se contratar créditos.')
+            st.write('A mensalidade ficou no valor de R$ {} em {} parcelas.'.format(mensalidade, parcela))
         
             if st.button('Posso confirmar a transferência'):
                 st.write('Já efetuamos a transferência. Confira! Agradecemos sua preferência!')
