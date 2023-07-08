@@ -24,7 +24,9 @@ st.markdown('*__Observação: para mais informações acerca do projeto, clique 
 #Indicando do que se trata a web app
 foto = Image.open('02_eu.jpg')
 st.sidebar.image(foto, use_column_width=True)
-st.sidebar.subheader('Projeto de portfólio de Ciência de Dados')
+st.sidebar.subheader('Bruno Rodrigues Carloto')
+st.sidebar.markdown('Cientista de dados')
+st.sidebar.markdown('#### Projeto de portfólio de Ciência de Dados')
 st.sidebar.markdown('''Leia o [artigo do projeto](https://br-cienciadedados.medium.com/projeto-de-machine-learning-ii-9c889faec8df), o qual descreve o passo a passo
 do desenvolvimento do modelo de machine learning. As descrições vão desde a limpeza dos dados até à análise do desempenho dos modelos e a seleção do melhor.''')
 st.sidebar.title('Menu')
