@@ -58,7 +58,13 @@ if pag == 'Interagir com a inteligência':
 
     #Classificador
     with open('decision_tree_classifier_fintech.pkl', 'rb') as f:
-        standard_classificacao, tree_tomek = pickle.load(f)
+        try:
+            # Código que pode gerar o erro
+            standard_classificacao, tree_tomek = pickle.load(f)
+        except ValueError:
+        # Lidar com a exceção ou ignorá-la completamente
+            pass  # Ou faça algo específico, se desejar
+        
 
 
     #Geração de conjunto de dados
