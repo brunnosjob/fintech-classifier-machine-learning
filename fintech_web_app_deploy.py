@@ -102,7 +102,7 @@ if pag == 'Interagir com a inteligência':
             st.write('Esses 30% são o limite alerta para se contratar créditos.')
             st.write('Pagamento à vista, no valor de R$ {}.'.format(mensalidade))
 
-        elif mensalidade >= (renda * 0.3) and parcela != 1:
+        elif mensalidade >= (renda * 0.3):
             st.write('{}, sua solicitação de empréstimo no valor de R$ {} foi aprovada. Parabéns!'.format(usuario, emprestimo))
             st.write('Mas, atenção! Você está comprometendo mais de 30% de sua renda.')
             st.write('Esses 30% são o limite alerta para se contratar créditos.')
