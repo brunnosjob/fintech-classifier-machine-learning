@@ -50,10 +50,13 @@ if pag == 'Interagir com a inteligência':
     renda = st.number_input('Me informe sua renda.')
     idade = st.number_input('Agora, preciso saber da sua idade.', 18)
     emprestimo = st.number_input('Qual o valor de empréstimo do seu interesse?', 0.0, 10000.00)
-    st.markdown('Sem juros')
+    st.markdown('Juros de 0,05%')
     parcela = st.radio('Selecione a quantidade de parcela',(1, 2, 3, 4, 5))
-    mensalidade = (round((emprestimo/parcela),2))
-    st.write('Se o empréstimo for aprovado, a mensalidade fica de R$ {} por mês'.format(mensalidade))
+    mensalidade = (round(((emprestimo/parcela)) * 1.05,2))
+    if parcela == 1:
+        st.write('Valor à vista se o empréstimo for aprovado: R$ {} por mês'.format(mensalidade))
+    else:
+        st.write('Se o empréstimo for aprovado, a mensalidade fica de R$ {} por mês'.format(mensalidade))
 
     #Aplicando a inteligência
     st.header('Resultado')
