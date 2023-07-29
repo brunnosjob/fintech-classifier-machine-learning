@@ -59,8 +59,7 @@ if pag == 'Interagir com a inteligência':
         st.write('Se o empréstimo for aprovado, a mensalidade fica de R$ {} por mês'.format(mensalidade))
 
     #Aplicando a inteligência
-    st.header('Resultado')
-    st.subheader('Aguarde o processamento dos dados')
+    st.subheader('Resultado')
     #Carregando modelos
 
     #Classificador
