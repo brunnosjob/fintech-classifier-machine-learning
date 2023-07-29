@@ -83,74 +83,78 @@ if pag == 'Interagir com a inteligência':
 
     #Condição e apresentação
     if classificacao == 0:
+
+        if st.button("Ver Resultado"):
          
-        if emprestimo >= 100 and emprestimo <= 330:
-            st.write('{}, pedimos desculpas! Infelizmente não podemos comprometer a sua renda. Zelamos por você.'.format(usuario))
-            st.write('Obrigado pela preferência')
-    
-        elif renda < 350:
-            st.write('{}, pedimos desculpas! Infelizmente não podemos comprometer a sua renda. Zelamos por você.'.format(usuario))
-            st.write('Obrigado pela preferência')
-            
-        elif emprestimo < 100:
-            st.write('{}, pedimos desculpas! Nossas ofertas de crédito são a partir de R$ 100,00.'.format(usuario))
-            st.write('Obrigado pela preferência!')
-    
-        elif mensalidade >= (renda * 0.3) and parcela == 1:
-            st.write('{}, sua solicitação de empréstimo no valor de R$ {} foi aprovada. Parabéns!'.format(usuario, emprestimo))
-            st.write('Mas, atenção! Você está comprometendo mais de 30% de sua renda.')
-            st.write('Esses 30% são o limite alerta para se contratar créditos.')
-            st.write('Pagamento à vista, no valor de R$ {}.'.format(mensalidade))
-
-            if st.button('Posso confirmar a transferência'):
-                st.write('Já efetuamos a transferência. Confira! Agradecemos sua preferência!')
-
-        elif mensalidade >= (renda * 0.3) and parcela != 1:
-            st.write('{}, sua solicitação de empréstimo no valor de R$ {} foi aprovada. Parabéns!'.format(usuario, emprestimo))
-            st.write('Mas, atenção! Você está comprometendo mais de 30% de sua renda.')
-            st.write('Esses 30% são o limite alerta para se contratar créditos.')
-            st.write('A mensalidade ficou no valor de R$ {} em {} parcelas.'.format(mensalidade, parcela))
+            if emprestimo >= 100 and emprestimo <= 330:
+                st.write('{}, pedimos desculpas! Infelizmente não podemos comprometer a sua renda. Zelamos por você.'.format(usuario))
+                st.write('Obrigado pela preferência')
         
-            if st.button('Posso confirmar a transferência'):
-                st.write('Já efetuamos a transferência. Confira! Agradecemos sua preferência!')
-            
+            elif renda < 350:
+                st.write('{}, pedimos desculpas! Infelizmente não podemos comprometer a sua renda. Zelamos por você.'.format(usuario))
+                st.write('Obrigado pela preferência')
+                
+            elif emprestimo < 100:
+                st.write('{}, pedimos desculpas! Nossas ofertas de crédito são a partir de R$ 100,00.'.format(usuario))
+                st.write('Obrigado pela preferência!')
         
-        elif mensalidade <= (renda * 0.3) and parcela == 1:
-            st.write('{}, sua solicitação de empréstimo no valor R$ {} foi aprovada. Parabéns!'.format(usuario, emprestimo))
-            st.write('Pagamento à vista, no valor de R$ {}.'.format(mensalidade))
-
-            if st.button('Posso confirmar a transferência'):
-                st.write('Já efetuamos a transferência. Confira! Agradecemos sua preferência!')
-            
-        elif mensalidade <= (renda * 0.3) and parcela != 1:
-            st.write('{}, sua solicitação de empréstimo no valor R$ {} foi aprovada. Parabéns!'.format(usuario, emprestimo))
-            st.write('A mensalidade ficou no valor de R$ {} por mês'.format(mensalidade))
-        
-            if st.button('Posso confirmar a transferência'):
-                st.write('Já efetuamos a transferência. Confira! Agradecemos sua preferência!')            
+            elif mensalidade >= (renda * 0.3) and parcela == 1:
+                st.write('{}, sua solicitação de empréstimo no valor de R$ {} foi aprovada. Parabéns!'.format(usuario, emprestimo))
+                st.write('Mas, atenção! Você está comprometendo mais de 30% de sua renda.')
+                st.write('Esses 30% são o limite alerta para se contratar créditos.')
+                st.write('Pagamento à vista, no valor de R$ {}.'.format(mensalidade))
     
+                if st.button('Posso confirmar a transferência'):
+                    st.write('Já efetuamos a transferência. Confira! Agradecemos sua preferência!')
+    
+            elif mensalidade >= (renda * 0.3) and parcela != 1:
+                st.write('{}, sua solicitação de empréstimo no valor de R$ {} foi aprovada. Parabéns!'.format(usuario, emprestimo))
+                st.write('Mas, atenção! Você está comprometendo mais de 30% de sua renda.')
+                st.write('Esses 30% são o limite alerta para se contratar créditos.')
+                st.write('A mensalidade ficou no valor de R$ {} em {} parcelas.'.format(mensalidade, parcela))
+            
+                if st.button('Posso confirmar a transferência'):
+                    st.write('Já efetuamos a transferência. Confira! Agradecemos sua preferência!')
+                
+            
+            elif mensalidade <= (renda * 0.3) and parcela == 1:
+                st.write('{}, sua solicitação de empréstimo no valor R$ {} foi aprovada. Parabéns!'.format(usuario, emprestimo))
+                st.write('Pagamento à vista, no valor de R$ {}.'.format(mensalidade))
+    
+                if st.button('Posso confirmar a transferência'):
+                    st.write('Já efetuamos a transferência. Confira! Agradecemos sua preferência!')
+                
+            elif mensalidade <= (renda * 0.3) and parcela != 1:
+                st.write('{}, sua solicitação de empréstimo no valor R$ {} foi aprovada. Parabéns!'.format(usuario, emprestimo))
+                st.write('A mensalidade ficou no valor de R$ {} por mês'.format(mensalidade))
+            
+                if st.button('Posso confirmar a transferência'):
+                    st.write('Já efetuamos a transferência. Confira! Agradecemos sua preferência!')            
+        
     if classificacao == 1:
     
-        if emprestimo >= 100 and emprestimo <= 330:
-           st.write('{}, pedimos desculpas! Infelizmente não podemos comprometer sua renda. Zelamos por você.'.format(usuario))
-           st.write('Obrigado pela preferência')
+        if st.button("Ver Resultado"):
         
-        elif renda < 350:
-            st.write('{}, pedimos desculpas! Infelizmente não podemos comprometer a sua renda. Zelamos por você.'.format(usuario))
-            st.write('Obrigado pela preferência')
-    
-        elif emprestimo < 100:
-            st.write('{}, pedimos desculpas. Sua solicitação de empréstimo no valor de R$ {} não foi aprovada.'.format(usuario, emprestimo))
-            st.write('Mas gostarias de informar também que nossas ofertas de crédito são a partir de R$ 100,00.')
-            st.write('Obrigado pela preferência!')
-    
-        elif mensalidade <= (renda * 0.3):
-            st.write('{}, lamentamos! Sua soliciatação de empréstimo no valor de R$ {} não foi aprovada.'.format(usuario, emprestimo))
-            st.write('Tente um valor menor.')             
-                         
-        elif mensalidade >= (renda * 0.3):
-            st.write('{}, Sua soliciatação de empréstimo no valor de R$ {} não foi aprovada.'.format(usuario, emprestimo))
-            st.write('Tente um valor menor.')                       
+            if emprestimo >= 100 and emprestimo <= 330:
+               st.write('{}, pedimos desculpas! Infelizmente não podemos comprometer sua renda. Zelamos por você.'.format(usuario))
+               st.write('Obrigado pela preferência')
+            
+            elif renda < 350:
+                st.write('{}, pedimos desculpas! Infelizmente não podemos comprometer a sua renda. Zelamos por você.'.format(usuario))
+                st.write('Obrigado pela preferência')
+        
+            elif emprestimo < 100:
+                st.write('{}, pedimos desculpas. Sua solicitação de empréstimo no valor de R$ {} não foi aprovada.'.format(usuario, emprestimo))
+                st.write('Mas gostarias de informar também que nossas ofertas de crédito são a partir de R$ 100,00.')
+                st.write('Obrigado pela preferência!')
+        
+            elif mensalidade <= (renda * 0.3):
+                st.write('{}, lamentamos! Sua soliciatação de empréstimo no valor de R$ {} não foi aprovada.'.format(usuario, emprestimo))
+                st.write('Tente um valor menor.')             
+                             
+            elif mensalidade >= (renda * 0.3):
+                st.write('{}, Sua soliciatação de empréstimo no valor de R$ {} não foi aprovada.'.format(usuario, emprestimo))
+                st.write('Tente um valor menor.')                       
 
 elif pag == 'Sobre o projeto':
     
