@@ -42,7 +42,7 @@ st.sidebar.markdown("- [Github](https://github.com/brunnosjob)")
 if pag == 'Interagir com a inteligência':
     
     st.header('Seja bem-vindo ao Good Bank')
-    st.subheader('Simulação')
+    st.subheader('Programa Para Todos')
     st.markdown(' ')
     usuario =  st.text_input('Me informe seu nome para termos uma interação melhor.')
     st.markdown(' ')
