@@ -22,7 +22,7 @@ import streamlit as st
 st.markdown('*__Observação: para mais informações acerca do projeto, clique na seta no canto esquerdo superior da tela__* ')
 
 #Indicando do que se trata a web app
-foto = Image.open('02_eu.jpg')
+foto = Image.open('bruno.carloto (2).png')
 st.sidebar.image(foto, use_column_width=True)
 st.sidebar.subheader('Bruno Rodrigues Carloto')
 st.sidebar.markdown('Analista de Inteligência de Mercado de Crédito')
