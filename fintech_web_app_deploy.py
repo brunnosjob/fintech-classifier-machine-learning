@@ -37,7 +37,7 @@ st.sidebar.markdown('Feito por : Bruno Rodrigues Carloto')
 st.sidebar.markdown("Redes Sociais :")
 st.sidebar.markdown("- [Linkedin](https://www.linkedin.com/in/bruno-rodrigues-carloto)")
 st.sidebar.markdown("- [Medium](https://medium.com/@brc-deep-analytics)")
-st.sidebar.markdown("- [Github](https://github.com/brunnosjob)")
+st.sidebar.markdown("- [Mercadados](https://brunnocarlotosjob.wixsite.com/mercadados)")
 
 if pag == 'Interagir com a inteligência':
     
